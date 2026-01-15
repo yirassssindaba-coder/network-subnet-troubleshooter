@@ -1,5 +1,5 @@
 import { Link, useLocation } from "wouter";
-import { Calculator, Wrench, Menu, X, Network } from "lucide-react";
+import { Calculator, Wrench, Menu, X, Network, BookOpen } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "./theme-toggle";
 import { useState } from "react";
@@ -8,6 +8,7 @@ import { cn } from "@/lib/utils";
 const navItems = [
   { path: "/", label: "Subnet Calculator", icon: Calculator },
   { path: "/troubleshoot", label: "Troubleshooting", icon: Wrench },
+  { path: "/tutorial", label: "Panduan", icon: BookOpen },
 ];
 
 export function Header() {

@@ -7,6 +7,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { Header } from "@/components/header";
 import SubnetCalculator from "@/pages/subnet-calculator";
 import Troubleshooting from "@/pages/troubleshooting";
+import Tutorial from "@/pages/tutorial";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -14,6 +15,7 @@ function Router() {
     <Switch>
       <Route path="/" component={SubnetCalculator} />
       <Route path="/troubleshoot" component={Troubleshooting} />
+      <Route path="/tutorial" component={Tutorial} />
       <Route component={NotFound} />
     </Switch>
   );
